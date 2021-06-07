@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+#form{ font-family: 'Arita-dotum-Medium';}
+input[type="text"]{font-family: 'Arita-dotum-Medium';}
+button{font-family: 'Arita-dotum-Medium';}
+label span{font-family: 'Arita-dotum-Medium';}
+.title h1{font-family: 'Arita-dotum-Medium';}
+
+*{margin:0; padding:0;}
+
+legend{
+position:absolute;
+left:-99999px;}
+
+#form{
+    width:428px;
+    background-color: #E8E8E8;
+    text-align:center;
+}
+
+fieldset{
+    border:0px;
+}
+
+
+
+.title{
+    padding-top:55px;
+    text-align: center;
+    color:#959595;
+}
+
+.LOGO{
+    width:182px;
+    height:143px;
+    margin:0 auto;
+    margin-top:40px;
+    margin-bottom:53px;
+}
+
+.write_box{
+    width:342px;
+    height:474px;
+    margin: 0 auto;
+    margin-left:42px;
+    margin-right:42px;
+    box-sizing: border-box;
+    
+}
+
+.w342 input[type="text"]{
+    border:1px solid #70707075;
+    width:342px;
+    height:67px;
+    background-color: #F5F5F5;
+    padding-left:12px;
+    box-sizing: border-box;
+    font-size:16px;
+    color:#959595;
+    border-bottom:0px;
+}
+
+.w171 input[type="text"]
+{
+    width:171px;
+    height:67px;
+    float:left;
+    border:1px solid #70707075;
+    background-color: #F5F5F5;
+    padding-left:12px;
+    box-sizing: border-box;
+    border-bottom:0;
+    border-right:0;
+}
+
+.w171 input[type="radio"]{
+    display:none;
+    color:#959595;
+}
+
+.w171 input[type="radio"]::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.w171 input[type="radio"] +label{
+    display:inline-block;
+    width:171px;
+    height:67px;
+    line-height:67px;
+    background-color: #F5F5F5;
+    border:1px solid #70707075;
+    box-sizing: border-box;
+    float:left;
+    padding-left:12px;
+    font-size:16px;
+    text-align:left;
+    border-right:0;
+}
+
+.w342 #CONFIRM{
+    border-bottom:1px solid #70707075;
+}
+
+.w171 #BIR{
+    border-top:0;
+}
+
+.w171 #PASS{
+    border-right:1px solid #70707075;
+}
+
+.w171 #NAT{
+    border-right:1px solid #70707075;
+    border-top:0;
+}
+
+.w171 #woman + label{
+    border-right:1px solid #70707075;
+}
+
+.w171 #woman:checked + label{
+    border:2px solid #DABBEA;
+}
+
+.w171 input[type="radio"]:checked + label{
+    border:2px solid #DABBEA;
+    box-sizing: border-box;
+}
+
+
+button{
+    width:342px;
+    height:47px;
+    background-color: #F5F5F5;
+    border:1px solid #70707075;
+    font-size:16px;
+    color:#959595;
+}
+
+
+.b01{
+    margin-top:33px;
+    margin-bottom:20px;
+}
+
+span{
+    font-size:16px;
+    color:#959595;
+}
+
+.b02{
+    margin-top:40px;
+    margin-bottom:100px;
+    position:relative;
+    z-index:1;
+}
+
+.b02::before{
+    content:'';
+    position:absolute;
+    width:50px;
+    height:6px;
+    background-color:#DABBEA;
+    left:145px;
+    top:50%;
+    z-index: -1;
+}
+
+::placeholder, button, label {
+    font-size:16px;
+    color:#959595;
+}
+
+
+
