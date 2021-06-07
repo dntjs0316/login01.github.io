@@ -1,0 +1,133 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration: none;
+display:block;
+color:#333;}
+
+
+
+
+
+fieldset{border:0;}
+
+
+legend {
+    position:absolute;
+    left:-999999999px;
+}
+
+#form{
+    width: 600px;
+    border: 1px solid #333;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+#form fieldset > div >label{
+    /* >는 자식 선택 */
+    width:150px;
+    font-weight:bold;
+    text-align:right;
+    /* display:inline-block; */
+    float:left;
+    line-height:32px;
+    margin-right:10px;   
+}
+
+#form fieldset > div:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+input[type="text"],
+input[type="password"]{
+    width:300px;
+    height :30px;
+    margin-top:5px;
+    border:1px solid #000;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+::placeholder{
+    font-size:12px;
+    color:#ddd;
+
+}
+
+/* input[type="text"]::placeholder */
+
+input[type="button"]{
+    width:300px;
+    height:30px;
+    background-color:#333;
+    color:#fff;
+    border:0;
+    margin-top:5px;
+    border:1px solid rgb(151,114,64);
+}
+
+
+
+.address input[type="text"]{
+    margin-left:160px;
+}
+
+.drank div{
+    display:inline-block;
+    line-height: 32px;
+}
+/* 간격이 없어야 할 때는 float 
+   상관 없을 때는 display:inline-block */
+
+textarea{
+    resize:none;
+    width:300px;
+}
+
+select{
+    height:40px;
+    width:200px;
+}
+
+.button{
+    text-align:center;
+    margin-top: 40px;
+    /* input 타입이 inline요소 inline요소일경우 부모한테
+        txext 적용시 이루어짐  */
+}
+
+.button input[type="reset"] {
+    width:120px;
+    height:40px;
+    border:1px solid #000;
+    background-color:#fff;
+}
+
+.button input[type="submit"]{
+    width:120px;
+    height:40px;
+    border:1px solid #000;
+    background-color:pink;
+}
+/* 부정적인 것 좌측 긍정적인 것 오른쪽 
+    긍정적인 요소가 부정적 요소보다 더 잘 보여서
+    손이 갈 수 있도록 지정해주는게 좋다. */
+
+    /* float을 이용하며녀 아래 쪽 아이들ㅇ 딸려 올라와서
+        적용한다. 무엇을 ? clear */
+
+
+/* #form span{
+    line-height:32px;
+}*/
+
+/* + 바로 뒤에 있는 형제선택자 */
+input[type="radio"]+span {
+     line-height:32px;
+  } 
+
+/* 1. submit 버튼 스타일 적용
+    2. subit과 reset 버튼 묶어서 가운데로 배치 */
